@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create or Take a Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Quiz Platform</h1>
+    <form id="quizForm">
+        <label for="question">Question:</label>
+        <input type="text" id="question" required>
+
+        <label for="option1">Option 1:</label>
+        <input type="text" id="option1" required>
+
+        <label for="option2">Option 2:</label>
+        <input type="text" id="option2" required>
+
+        <label for="option3">Option 3:</label>
+        <input type="text" id="option3" required>
+
+        <label for="correctAnswer">Correct Answer:</label>
+        <select id="correctAnswer" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+
+        <button type="button" onclick="addQuestion()">Add Question</button>
+    </form>
+
+    <div id="quizContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
